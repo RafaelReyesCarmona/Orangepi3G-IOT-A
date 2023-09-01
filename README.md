@@ -164,7 +164,7 @@ ln -s OrangePi3G-iot_updates/ updates
 ln -s OrangePi3G-iot_scripts/build.sh build.sh
 ```
 
-After run './build.sh', update with 'sudo apt-get update'.
+Run './build.sh', root password is required.
 
 ```Bash
 orangepi@Rafa-Win10:~/OrangePi3G-iot$ ./build.sh
@@ -174,7 +174,7 @@ orangepi@Rafa-Win10:~/OrangePi3G-iot$ ./build.sh
 [sudo] password for orangepi:
 ``` 
 
-Script will install all necesary form apt and chows 'Orange Pi Build System' menu. Select platform 'OrangePi 3g-iot-A' or 'OrangePi 3g-iot-B'.
+Script will install all necesary from apt and chows 'Orange Pi Build System' menu. Select platform 'OrangePi 3g-iot-A' or 'OrangePi 3g-iot-B'.
 
 ![MenuOrange Pi Build System](image.png)
 
@@ -184,8 +184,9 @@ Next step select opction you will do:
  2 Build Uboot
  3 Build Linux
  4 Build Module only
+ 5 Update WIFI
 
- ![Alt text](image-1.png)
+ ![Menu OPtinos](image-1.png)
 
  Select 'Build Release Image' and Ubuntu server. At the end of the process you get a file and directory with all files to burn the device placed on 'output/images'.
 
@@ -203,6 +204,12 @@ OrangePi_3g-iot-A_ubuntu_xenial_server_linux3.4.67_v1.1/MT6572_Android_scatter.t
 OrangePi_3g-iot-A_ubuntu_xenial_server_linux3.4.67_v1.1/boot_nand.img
 ```
 
+Added new menu option to change wifi info (SSID and PASSWORD) fastly.
+![Update WIFI option menu](image-11.png)
+
+![Enter SSID](image-12.png)
+
+![Enter PASSWORD](image-13.png)
 ## Burn firmware to OrangePi3G-IOT-A
 
 Now you can use Smart Phone Flash Tool on the download page of Orange Pi 3G-IoT section.
