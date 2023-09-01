@@ -176,7 +176,7 @@ orangepi@Rafa-Win10:~/OrangePi3G-iot$ ./build.sh
 
 Script will install all necesary from apt and chows 'Orange Pi Build System' menu. Select platform 'OrangePi 3g-iot-A' or 'OrangePi 3g-iot-B'.
 
-![MenuOrange Pi Build System](image.png)
+![MenuOrange Pi Build System](img/image.png)
 
 Next step select opction you will do:
  0 Build Release Image
@@ -186,7 +186,7 @@ Next step select opction you will do:
  4 Build Module only
  5 Update WIFI
 
- ![Menu OPtinos](image-1.png)
+ ![Menu OPtinos](img/image-1.png)
 
  Select 'Build Release Image' and Ubuntu server. At the end of the process you get a file and directory with all files to burn the device placed on 'output/images'.
 
@@ -205,31 +205,31 @@ OrangePi_3g-iot-A_ubuntu_xenial_server_linux3.4.67_v1.1/boot_nand.img
 ```
 
 Added new menu option to change wifi info (SSID and PASSWORD) fastly.
-![Update WIFI option menu](image-11.png)
+![Update WIFI option menu](img/image-11.png)
 
-![Enter SSID](image-12.png)
+![Enter SSID](img/image-12.png)
 
-![Enter PASSWORD](image-13.png)
+![Enter PASSWORD](img/image-13.png)
 ## Burn firmware to OrangePi3G-IOT-A
 
 Now you can use Smart Phone Flash Tool on the download page of Orange Pi 3G-IoT section.
 
-![Smart Phone Flash Tool](image-2.png)
+![Smart Phone Flash Tool](img/image-2.png)
 
 Options:
 * Download-Agent: choose MTK_AllInOne_DA.bin.
-![MTK_AllInOne_DA.bin](image-3.png)
+![MTK_AllInOne_DA.bin](img/image-3.png)
 
 * Scatter-loading File: choose MT6572_Android_scatter.txt
-![MT6572_Android_scatter.txt](image-4.png)
+![MT6572_Android_scatter.txt](img/image-4.png)
 
 Procedure:
-* Run flash_util.exe ![MediaTek flash util](image-5.png)
+* Run flash_util.exe ![MediaTek flash util](img/image-5.png)
 * Configure options above.
-* Place jumpers as this: ![Jumper to download firmware](image-6.png)
-* Click 'Download' buttom. ![Download button](image-8.png)
+* Place jumpers as this: ![Jumper to download firmware](img/image-6.png)
+* Click 'Download' buttom. ![Download button](img/image-8.png)
 * Plug usb cable from OrangePi3G-IOT-A's microusb to computer usb port.
-* Download firmware will finish when 'ok' splash shows. ![Ok splash](image-7.png)
+* Download firmware will finish when 'ok' splash shows. ![Ok splash](img/image-7.png)
 
  Only the lk and kernel were burned in the front. Since OrangePi3G-iot-A only has 512M on-board storage, there is a problem of insufficient space, so you need to burn the rootfs to a TF card, and prepare a TF
 card with more than 8G and class10. After formatting, burn roofs.img into it.
@@ -246,7 +246,11 @@ sdb is the device file corresponding to the TF card
 #### Windows
 If it is a windows system, you can also use Win32DiskImager or BalenaEtcher software to burn.
 
-![BalenaEtcher](image-10.png)
+![BalenaEtcher](img/image-10.png)
 
 If BalenaEtcher show this error click 'Continue' and Flash.
-![Partition error](image-9.png)
+![Partition error](img/image-9.png)
+
+## Accesing to OrangePi3G-iot-A
+
+To access 
