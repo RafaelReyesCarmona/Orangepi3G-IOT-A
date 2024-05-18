@@ -253,4 +253,6 @@ If BalenaEtcher show this error click 'Continue' and Flash.
 
 ## Accesing to OrangePi3G-iot-A
 
-To access 
+To access ...
+# Information
+You can get more info in the wiki page: [OrangePi 3G IOT-A Wiki page](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_3G-_IoT_-A)
