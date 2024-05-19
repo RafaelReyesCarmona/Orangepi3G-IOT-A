@@ -2,7 +2,7 @@
 
 This are instructions to install linux Ubuntu Xenial server (16.04) on OrangePi 3G-IOT-A devices using Windows Sybsystem Linux on Windows.
 
-## Enable WSL and Ubuntu 18.04 on Windows 10
+## Enable WSL and Ubuntu 16.04 on Windows 10
 
 **References:** 
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
@@ -19,10 +19,10 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 ```
 
 
-Download Ubutnu 18.04:
+Download Ubutnu 16.04:
 
 ```Powershell
-Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu.appx -UseBasicParsing
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
 ```
 
 Open Powershell in Administrator mode and install the downloaded package:
